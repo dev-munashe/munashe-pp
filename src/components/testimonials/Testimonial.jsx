@@ -47,7 +47,7 @@ const Testimonial = () => {
       <Swiper className="container testimonials__container"
         modules={[Pagination]}
         spaceBetween={40}
-        slidePerView={1}
+        slideperview={1}
         pagination={{ clickable: true }}>
         {
         data.map(({avatar, name, review}, index) => {
