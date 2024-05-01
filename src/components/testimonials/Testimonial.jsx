@@ -18,23 +18,23 @@ import 'swiper/css/pagination'
 const data = [
   {
     avatar: Avt1,
-    name: 'Madrena Taylor',
-    review: ' The service provides authentication for apps hosted in the cloud and on-premises. Authentication types include individual accounts, social network accounts, and federated enterprise accounts.'
+    name: 'Dean Sithole',
+    review: 'Munashe is a dedicated team player, consistently delivering high-quality work and driving innovation. Her positive attitude and strong communication skills make her a valuable asset to any project.'
   },
   {
     avatar: Avt2,
-    name: 'Brighton Taylor',
-    review: ' The service provides authentication for apps hosted in the cloud and on-premises. Authentication types include individual accounts, social network accounts, and federated enterprise accounts.'
+    name: 'Brighton Tandabantu',
+    review: ' Working with Munashe is a pleasure. She is not only technically proficient but also collaborative and eager to share her knowledge. Her passion for learning and problem-solving is evident in everything she does.'
   },
   {
     avatar: Avt3,
-    name: 'Tanaka Taylor',
-    review: ' The service provides authentication for apps hosted in the cloud and on-premises. Authentication types include individual accounts, social network accounts, and federated enterprise accounts.'
+    name: 'Kundai Clayton',
+    review: ' Munashe exceeded our expectations on a recent project. Her professionalism, attention to detail, and clear communication made the process smooth and efficient. I highly recommend her for any software development needs.'
   },
   {
     avatar: Avt4,
-    name: 'Ciara Taylor',
-    review: ' The service provides authentication for apps hosted in the cloud and on-premises. Authentication types include individual accounts, social network accounts, and federated enterprise accounts.'
+    name: 'Denver Taylor',
+    review: ' Munashe is destined for success. Her enthusiasm for learning and determination to excel set her apart. I have no doubt she will continue to thrive in her career as a software engineer.'
   }
 ]
 
