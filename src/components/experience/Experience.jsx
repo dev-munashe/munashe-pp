@@ -24,6 +24,30 @@ const Experience = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__icon'/>
               <div>
+              <h4>Tailwind</h4>
+              <small>Basic</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Blazor</h4>
+              <small>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Flutter</h4>
+              <small>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
               <h4>React JS</h4>
               <small>Experienced</small>
               </div>
@@ -95,7 +119,7 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__icon'/>
               <div>
               <h4>MONGODB</h4>
-              <small>Intermediate</small>
+              <small>Basic</small>
               </div>
             </article>
 
@@ -103,6 +127,14 @@ const Experience = () => {
               <BsPatchCheckFill className='experience__icon'/>
               <div>
               <h4>MySQL</h4>
+              <small>Basic</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Selenium</h4>
               <small>Basic</small>
               </div>
             </article>
@@ -120,6 +152,30 @@ const Experience = () => {
               <div>
               <h4>ASP.NET CORE MVC</h4>
               <small>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Entity Framework Core</h4>
+              <small>Intermediate</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Flutter</h4>
+              <small>Basic</small>
+              </div>
+            </article>
+
+            <article className='experience__details'>
+              <BsPatchCheckFill className='experience__icon'/>
+              <div>
+              <h4>Firebase</h4>
+              <small>Basic</small>
               </div>
             </article>
 
