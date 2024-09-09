@@ -11,6 +11,16 @@
     gap: 1.2rem;
 }
 
+.contact__option h5 {
+  text-align: center;
+  word-wrap: break-word; /* Ensures long text breaks into multiple lines */
+  font-size: 1rem; /* Adjust the font size to fit the box */
+  line-height: 1.5rem; /* Adjust line-height for better readability */
+  margin-top: 0.5rem; /* Add space between h4 and h5 */
+  padding: 0 0.5rem; /* Add padding to avoid text touching the edges */
+}
+
+
 .contact__option {
     background: var(--color-bg-variant);
     padding: 1.2rem;
