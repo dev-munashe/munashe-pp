@@ -18,10 +18,10 @@ const Footer = () => {
       </ul>
 
       <div className="footer__socials">
-        <a target="_blank" href="https://www.linkedin.com/in/m-tanda/"><FiLinkedin/></a>
-        <a target="_blank" href="https://www.facebook.com/profile.php?id=100086319262218"><FaFacebookF/></a>
-        <a target="_blank" href="https://www.instagram.com/arcdaemon101/"><FiInstagram/></a>
-      </div>git 
+        <a target="_blank" rel='noreferrer' href="https://www.linkedin.com/in/m-tanda/"><FiLinkedin/></a>
+        <a target="_blank" rel='noreferrer' href="https://www.facebook.com/profile.php?id=100086319262218"><FaFacebookF/></a>
+        <a target="_blank" rel='noreferrer' href="https://www.instagram.com/arcdaemon101/"><FiInstagram/></a>
+      </div>
 
       <div className="footer__copyright">
         <small>&copy; Munashe Portfolio. All rights reserved.</small>
