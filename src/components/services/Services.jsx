@@ -17,32 +17,32 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__icon'/>
-              <p>Conducting thorough user research to understand the target audience, their needs, and behaviors.</p>
+              <p>User research and behavioral analysis</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p> Creating low-fidelity wireframes to outline the structure and layout of the user interface.</p>
+              <p>Wireframing and interface structure design</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Developing interactive prototypes to test and validate user flows, interactions, and usability.</p>
+              <p>Interactive prototyping and usability testing</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Crafting visually appealing user interfaces with a focus on aesthetics, branding, and consistency.</p>
+              <p>Visual design with focus on branding consistency</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p> Organizing and structuring content to ensure intuitive navigation and efficient user journeys.</p>
+              <p>Information architecture and navigation design</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Defining and designing interactive elements and animations to enhance user engagement.</p>
+              <p>Interaction design and micro-animations</p>
             </li>
 
           </ul>
@@ -57,37 +57,37 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__icon'/>
-              <p>Building interactive and user-friendly web interfaces using HTML, CSS, and JavaScript.</p>
+              <p>Interactive web interfaces with HTML, CSS & JavaScript</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Creating websites that seamlessly adapt to different devices and screen sizes.</p>
+              <p>Responsive design for all devices and screen sizes</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Developing tailor-made web applications to meet specific business needs and requirements.</p>
+              <p>Custom web applications for specific business needs</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Building modern, dynamic web applications using frameworks like React or Angular.</p>
+              <p>Modern frameworks: React, Angular & ASP.NET Core</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Ensuring your website functions correctly and consistently across different web browsers.</p>
+              <p>Cross-browser compatibility testing</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Integrating and customizing popular CMS platforms like WordPress or Umbraco.</p>
+              <p>CMS integration: WordPress & Umbraco</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p> Connecting web applications with third-party APIs.</p>
+              <p>Third-party API integration and development</p>
             </li>
             
           </ul>
@@ -102,27 +102,27 @@ const Services = () => {
           <ul className='service__list'>
             <li>
               <BiCheck className='service__icon'/>
-              <p>Creating engaging TikTok videos that highlight the features and functionality of my web development projects.</p>
+              <p>Engaging TikTok videos highlighting project features</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Crafting compelling narratives through video editing techniques to captivate viewers and generate interest in my projects.</p>
+              <p>Compelling video narratives and strategic editing</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Showcasing how users can interact with your applications or websites through captivating and concise videos.</p>
+              <p>Application demos and interactive walkthroughs</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Simplifying complex technical aspects of my projects into bite-sized and easily understandable videos.</p>
+              <p>Technical concepts simplified for broader audiences</p>
             </li>
 
             <li>
               <BiCheck className='service__icon'/>
-              <p>Offering glimpses into my development process, sharing insights, and providing a unique perspective on my projects.</p>
+              <p>Behind-the-scenes development process insights</p>
             </li>            
           </ul>
         </article>
