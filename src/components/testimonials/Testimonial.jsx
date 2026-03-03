@@ -1,7 +1,7 @@
 import React from 'react'
 import './testimonial.css'
 import Avt2 from '../../assets/brighton.JPG'
-import Avt3 from '../../assets/avatar3.JPG'
+import Avt3 from '../../assets/avatar3.jpg'
 import Avt4 from '../../assets/avatar4.jpeg'
 
 // Import Swiper core and required modules
