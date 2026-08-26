@@ -1,84 +1,173 @@
 header{
-    height: 150vh;
-    padding-top: 7rem;
-    overflow: hidden;
+    min-height: 92vh;
+    padding: 7rem 0 6rem;
+    overflow: visible;
 }
 
 .header_container{
-    text-align: center;
-    height: 100%;
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(18rem, 0.75fr);
+    align-items: center;
+    gap: 4rem;
     position: relative;
 }
- 
 
-/* ============= cta =================*/
-
-.cta{
-    margin-top: 2.5rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
+.hero__copy{
+    max-width: 46rem;
 }
 
-/* ======= HEADER SOCIAL =======*/
+.hero__eyebrow{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.22em;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 1.1rem;
+}
+
+.hero__lead{
+    max-width: 42rem;
+    font-size: clamp(1.04rem, 2vw, 1.25rem);
+    margin-top: 1.4rem;
+}
+
+.hero__highlights{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin: 1.8rem 0 0.4rem;
+}
+
+.hero__highlights span{
+    border: 1px solid var(--color-border);
+    background: var(--color-surface-soft);
+    color: var(--color-light);
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+}
+
+.cta{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.85rem;
+}
+
+.hero__visual{
+    position: relative;
+    min-height: auto;
+}
+
+.me{
+    width: min(26rem, 100%);
+    aspect-ratio: 0.78;
+    margin-left: auto;
+    border-radius: 2rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: linear-gradient(145deg, rgba(125, 211, 252, 0.18), rgba(240, 184, 110, 0.12));
+    box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.24);
+}
+
+.me img{
+    height: 100%;
+    object-position: center top;
+}
+
+.hero__note{
+    width: min(25rem, 100%);
+    margin: 1rem 0 0 auto;
+    padding: 1.1rem;
+    border-radius: 1rem;
+    border: 1px solid var(--color-border);
+    background: rgba(15, 23, 32, 0.86);
+    backdrop-filter: blur(18px);
+}
+
+.hero__note span{
+    display: block;
+    color: var(--color-muted);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.45rem;
+}
+
+.hero__note strong{
+    display: block;
+    color: var(--color-white);
+    font-size: 0.96rem;
+    line-height: 1.45;
+}
 
 .header_socials{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.8rem;
-    position: absolute;
-    left: 0;
-    bottom: 3rem;
+    position: fixed;
+    left: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 3;
 }
 
-.header_socials::after {
-    content: "";
-    width: 1px;
-    height: 2rem;
-    background-color: var(--color-primary);
+.header_socials a{
+    width: 2.4rem;
+    height: 2.4rem;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.035);
+    color: var(--color-light);
 }
 
-/*===========image =====*/
-.me{
-    background: linear-gradient(var(--color-primary), transparent);
-    width: 22rem;
-    height: 30rem;
-    position: absolute;
-    left: calc(50% - 11rem);
-    margin-top: 4rem;
-    border-radius: 12rem 12rem  0 0;
-    overflow: hidden;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+.header_socials a:hover{
+    background: var(--color-white);
+    color: var(--color-bg);
 }
-
-/* ============ SCROLL DOWN =============*/
 
 .scroll_down{
-    right: -2.3rem;
-    bottom: 5rem;
-    position: absolute;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 0.9rem;
+    display: none;
 }
-
-/* ========= Media Queries(MEDIUM DEVICES) ========*/
 
 @media screen and (max-width: 1024px) {
     header{
-        height: 118vh;
+        min-height: auto;
+        padding-top: 6rem;
+    }
+
+    .header_container{
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .hero__visual{
+        min-height: auto;
+        max-width: 30rem;
+    }
+
+    .me{
+        margin-left: 0;
     }
 }
 
-/* ========= Media Queries(Small DEVICES) ========*/
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     header{
-        height: 150vh;
+        padding: 5.5rem 0 2rem;
     }
 
-    .header_socials, .scroll_down{
+    .header_socials{
         display: none;
+    }
+
+    .hero__visual{
+        display: none;
+    }
+
+    .cta .btn{
+        width: 100%;
     }
 }

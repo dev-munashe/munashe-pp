@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap");
 
 *{
     margin: 0;
@@ -12,18 +11,23 @@
 }
 
 :root{
-    --color-bg: #1f1f38;
-    --color-bg-variant: #2c2c6c;
-    --color-primary: #4db5ff;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
-    --color-white: #fff;
-    --color-light: rgba(255, 255, 255, 0.6);
+    --color-bg: #0f1720;
+    --color-bg-variant: #162434;
+    --color-surface: #101f2d;
+    --color-surface-soft: rgba(255, 255, 255, 0.045);
+    --color-primary: #7dd3fc;
+    --color-primary-variant: rgba(125, 211, 252, 0.24);
+    --color-accent: #f0b86e;
+    --color-white: #f8fafc;
+    --color-light: rgba(226, 232, 240, 0.72);
+    --color-muted: rgba(226, 232, 240, 0.48);
+    --color-border: rgba(226, 232, 240, 0.11);
 
-    --transition: all 400ms ease;
+    --transition: all 220ms ease;
 
-    --container-width-lg: 75%;
-    --container-width-md: 86%;
-    --container-width-sm: 90%;
+    --container-width-lg: min(1120px, 86%);
+    --container-width-md: 88%;
+    --container-width-sm: 91%;
 }
 
 html{
@@ -31,15 +35,22 @@ html{
 }
 
 ::-webkit-scrollbar {
-    display: none;
+    width: 0.35rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(125, 211, 252, 0.25);
+    border-radius: 999px;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
-    background: var(--color-bg);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background:
+        radial-gradient(circle at top left, rgba(125, 211, 252, 0.11), transparent 30rem),
+        radial-gradient(circle at 85% 15%, rgba(240, 184, 110, 0.08), transparent 24rem),
+        var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    /*background-image: url();  */
 }
 
 .container{
@@ -48,28 +59,44 @@ body{
 }
 
 h1,h2,h3,h4,h5{
-    font-weight: 500;
+    font-weight: 700;
+    line-height: 1.12;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: clamp(3rem, 8vw, 6.8rem);
+    letter-spacing: -0.06em;
+}
+
+h2{
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    letter-spacing: -0.04em;
+}
+
+p{
+    color: var(--color-light);
 }
 
 section{
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 
 section > h2, section > h5{
     text-align: center;
-    color: var(--color-light);
+}
+
+section > h5{
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-size: 0.72rem;
+    margin-bottom: 0.65rem;
 }
 
 section > h2 {
-    color: var(--color-primary);
+    color: var(--color-white);
     margin-bottom: 3rem;
 }
-
-/* ============= General Properties (Large)=======*/
 
 .text-light{
     color: var(--color-light);
@@ -86,24 +113,36 @@ a:hover{
 
 .btn{
     width: max-content;
-    display: inline-block;
-    color: var(--color-primary);
-    padding: 0.75rem 1.2rem;
-    border-radius: 0.4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    padding: 0.85rem 1.15rem;
+    border-radius: 0.85rem;
     cursor: pointer;
-    border: 1px solid var(--color-primary);
+    border: 1px solid var(--color-border);
+    background: rgba(255, 255, 255, 0.035);
     transition: var(--transition);
+    font-size: 0.92rem;
+    font-weight: 600;
 }
 
 .btn:hover{
-    background: var(--color-white);
-    color: var(--color-bg);
-    border-color: transparent;
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--color-primary-variant);
+    transform: translateY(-2px);
 }
 
 .btn-primary{
-    background: var(--color-primary);
+    background: var(--color-white);
     color: var(--color-bg);
+    border-color: var(--color-white);
+}
+
+.btn-primary:hover{
+    background: var(--color-primary);
+    color: #07111a;
+    border-color: var(--color-primary);
 }
 
 img{
@@ -112,27 +151,22 @@ img{
     object-fit: cover;
 }
 
-/* ========= Media Queries(MEDIUM DEVICES) ========*/
-
 @media screen and (max-width: 1024px) {
     .container{
-         width: var(--container-width-md );
+         width: var(--container-width-md);
     }
 }
-
-section{
-    margin-top: 6rem;
-   /* height: 100vh;*/
-}
-
-/* ========= Media Queries(Small DEVICES) ========*/
 
 @media screen and (max-width: 600px) {
     .container{
          width: var(--container-width-sm);
     }
-}
 
-section > h2{
-    margin-bottom: 2rem;
+    section{
+        margin-top: 5rem;
+    }
+
+    section > h2{
+        margin-bottom: 2rem;
+    }
 }

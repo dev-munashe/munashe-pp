@@ -1,54 +1,71 @@
 import React from 'react'
 import './about.css'
 import Me from '../../assets/munashe.png'
-import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
-import {VscFolderLibrary} from 'react-icons/vsc'
+import {FaGraduationCap} from 'react-icons/fa'
+import {FiMapPin} from 'react-icons/fi'
+import {VscTools} from 'react-icons/vsc'
+
+const cards = [
+  { icon: <FiMapPin />, title: 'Started in the Lowveld', detail: 'Rural Zimbabwe shaped my persistence and independence.' },
+  { icon: <VscTools />, title: 'Before software', detail: 'Worked as a surgery assistant while learning development at night.' },
+  { icon: <FaGraduationCap />, title: 'Still studying', detail: 'Computer Science at University of the People, alongside real product work.' },
+]
+
+const strengths = [
+  'I learned to build without a ready-made tech network, so I value resourcefulness and follow-through.',
+  'Healthcare and field-work projects taught me to care about accuracy, records, and people using systems under pressure.',
+  'Moving from self-study into shipped software gave me a practical builder mindset: learn fast, ask clearly, deliver carefully.',
+]
 
 const About = () => {
   return (
     <section id='about'>
-      <h5>Get To Know</h5>
+      <h5>Get to know</h5>
       <h2>About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
-          <div className="about__me-image">
-            <img src={Me} alt='me'/>
+        <div className="about__media">
+          <div className="about__me">
+            <div className="about__me-image">
+              <img src={Me} alt='Munashe Tandabantu' />
+            </div>
           </div>
         </div>
 
         <div className="about__content">
           <div className='about__cards'>
-            
-            <article className="about__card">
-              <FaAward className='about__icon'/>
-              <h5>Experience</h5>
-              <small>4+ years of working</small>
-            </article>
-
-            <article className="about__card">
-              <FiUsers className='about__icon'/>
-              <h5>Clients</h5>
-              <small>4+ Worldwide</small>
-            </article>
-
-            <article className="about__card">
-              <VscFolderLibrary className='about__icon'/>
-              <h5>Projects</h5>
-              <small>15+ Completed</small>
-            </article>
+            {cards.map(({ icon, title, detail }) => (
+              <article className="about__card" key={title}>
+                <div className='about__icon'>{icon}</div>
+                <h5>{title}</h5>
+                <small>{detail}</small>
+              </article>
+            ))}
           </div>
-          <p>I am a full-stack developer who enjoys turning ideas into clean, useful digital products. 
-            Over the past four years, I have built and contributed to web applications, portfolio sites, 
-            business tools, and client-facing projects while growing across React, JavaScript, C#, .NET, 
-            databases, APIs, and modern frontend design. I care about writing practical software that is 
-            easy to use, dependable, and clear. I am still learning every day, but I now bring real project 
-            experience, stronger engineering habits, and the confidence to solve problems from design 
-            through delivery.
-            </p>
 
-            <a href='#contact' className='btn btn-primary'>Let`s Talk</a>
+          <div className='about__copy'>
+            <p>
+              My path into software was not the straight one. I grew up in Zimbabwe&apos;s Lowveld,
+              studied through schools where software was not an obvious future, then worked as a
+              surgery assistant before teaching myself web development and C# after hours.
+            </p>
+            <p>
+              That background is a big part of how I build now. I am drawn to practical systems:
+              dashboards, reporting workflows, client tools, student support, and software that makes
+              information easier to act on. I like the point where human needs become product decisions.
+            </p>
+            <p>
+              Outside the code, I am still very much in the learning chapter too: studying Computer Science,
+              sharing parts of that journey publicly, and staying close to the kind of work that helps other
+              people see technology as something they can enter, not just consume.
+            </p>
+          </div>
+
+          <div className='about__strengths'>
+            {strengths.map((item) => <span key={item}>{item}</span>)}
+          </div>
+
+          <a href='#contact' className='btn btn-primary'>Let&apos;s Talk</a>
         </div>
       </div>
     </section>

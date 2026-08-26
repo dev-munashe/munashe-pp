@@ -1,58 +1,79 @@
 .portfolio__container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2.5rem;
+    gap: 1.25rem;
 }
 
 .portfolio__item{
-    background: var(--color-bg-variant);
-    padding: 1.3rem;
-    border-radius: 2rem;
-    border: 1px solid transparent;
+    background: var(--color-surface-soft);
+    padding: 1.45rem;
+    border-radius: 1.15rem;
+    border: 1px solid var(--color-border);
     transition: var(--transition);
+    display: flex;
+    flex-direction: column;
 }
 
 .portfolio__item:hover {
-    border: 1px solid var(--color-primary-variant);
-    background: transparent;
+    transform: translateY(-3px);
+    border-color: var(--color-primary-variant);
+    background: rgba(255, 255, 255, 0.06);
 }
 
-.portfolio__item-image{
-    border-radius: 1.5rem;
-    overflow: hidden;
+.portfolio__type{
+    color: var(--color-accent);
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    margin-bottom: 0.85rem;
 }
 
 .portfolio__item h3{
-    margin: 1.2rem 0 2rem;
+    color: var(--color-white);
+    font-size: 1.25rem;
+    margin-bottom: 0.9rem;
 }
 
 .portfolio__item-description {
     color: var(--color-light);
-    font-size: 0.9rem;
-    margin: -1rem 0 1.5rem;
-    line-height: 1.6;
+    font-size: 0.94rem;
+    line-height: 1.65;
+}
+
+.portfolio__stack{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.25rem 0 1.4rem;
+}
+
+.portfolio__stack span{
+    color: var(--color-muted);
+    border: 1px solid var(--color-border);
+    border-radius: 999px;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.75rem;
 }
 
 .portfolio__item-cta{
     display: flex;
-    gap: 1rem;
-    margin: 1rem;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: auto;
 }
-
-/*==================== Media Queries(MEDIUM DEVICES)=================*/
 
 @media screen and (max-width: 1024px) {
     .portfolio__container{
         grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
     }
 }
 
-/*==================== Media Queries(SMALL DEVICES)=================*/
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .portfolio__container{
         grid-template-columns: 1fr;
-        gap: 1rem;
+    }
+
+    .portfolio__item-cta .btn{
+        flex: 1;
     }
 }

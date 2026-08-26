@@ -1,82 +1,86 @@
 .container.contact__container{
-    width: 58%;
+    width: min(920px, var(--container-width-lg));
     display: grid;
-    grid-template-columns: 30% 58%;
-    gap: 12%;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 1.5rem;
 }
 
 .contact__options{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
-
-.contact__option h5 {
-  text-align: center;
-  word-wrap: break-word; /* Ensures long text breaks into multiple lines */
-  font-size: 1rem; /* Adjust the font size to fit the box */
-  line-height: 1.5rem; /* Adjust line-height for better readability */
-  margin-top: 0.5rem; /* Add space between h4 and h5 */
-  padding: 0 0.5rem; /* Add padding to avoid text touching the edges */
-}
-
 
 .contact__option {
-    background: var(--color-bg-variant);
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    text-align: center;
-    border: 1px solid transparent;
+    background: var(--color-surface-soft);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    text-align: left;
+    border: 1px solid var(--color-border);
     transition: var(--transition);
 }
 
 .contact__option:hover {
-    background: transparent;
+    transform: translateY(-3px);
     border-color: var(--color-primary-variant);
+    background: rgba(255, 255, 255, 0.06);
 }
 
 .contact__option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+    font-size: 1.45rem;
+    margin-bottom: 0.8rem;
+}
+
+.contact__option h4{
+    color: var(--color-white);
+    margin-bottom: 0.4rem;
+}
+
+.contact__option h5 {
+    color: var(--color-muted);
+    word-break: break-word;
+    font-size: 0.86rem;
+    line-height: 1.45;
+    font-weight: 500;
 }
 
 .contact__option a {
-    margin-top: 0.7rem;
+    margin-top: 0.8rem;
     display: inline-block;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 600;
 }
-
-/* ========== FORM ===============*/
 
 form {
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    gap: 1rem;
 }
 
 input, textarea {
     width: 100%;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-primary-variant);
+    padding: 1.05rem 1.1rem;
+    border-radius: 0.9rem;
+    background: rgba(255, 255, 255, 0.035);
+    border: 1px solid var(--color-border);
     resize: none;
     color: var(--color-white);
+    font: inherit;
 }
 
-/* ========= Media Queries(MEDIUM DEVICES) ========*/
+input:focus, textarea:focus{
+    border-color: var(--color-primary-variant);
+    background: rgba(255, 255, 255, 0.055);
+}
 
-@media screen and (max-width: 1024px) {  
+input::placeholder, textarea::placeholder{
+    color: var(--color-muted);
+}
+
+@media screen and (max-width: 900px) {
     .container.contact__container{
         grid-template-columns: 1fr;
-        gap: 2rem;
-    }
-}
-
-/* ========= Media Queries(Small DEVICES) ========*/
-
-@media screen and (max-width: 600px) {
-    .container.contact__container{
-        width: var(--container-width-sm);
+        gap: 1.5rem;
     }
 }
