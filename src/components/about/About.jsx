@@ -24,7 +24,7 @@ const About = () => {
             <article className="about__card">
               <FaAward className='about__icon'/>
               <h5>Experience</h5>
-              <small>3+ years of working</small>
+              <small>4+ years of working</small>
             </article>
 
             <article className="about__card">
@@ -39,11 +39,13 @@ const About = () => {
               <small>15+ Completed</small>
             </article>
           </div>
-          <p>I am a self-taught developer and passionate problem solver. 
-            As a dedicated and hardworking woman, I have successfully built numerous projects, including full-stack 
-            websites. Programming is not just a profession for me; it's a true 
-            passion. I am constantly seeking opportunities to challenge myself, grow, and expand my knowledge. With a thirst for continuous learning, I am excited to embark on new endeavors 
-            and create innovative solutions every day.
+          <p>I am a full-stack developer who enjoys turning ideas into clean, useful digital products. 
+            Over the past four years, I have built and contributed to web applications, portfolio sites, 
+            business tools, and client-facing projects while growing across React, JavaScript, C#, .NET, 
+            databases, APIs, and modern frontend design. I care about writing practical software that is 
+            easy to use, dependable, and clear. I am still learning every day, but I now bring real project 
+            experience, stronger engineering habits, and the confidence to solve problems from design 
+            through delivery.
             </p>
 
             <a href='#contact' className='btn btn-primary'>Let`s Talk</a>
