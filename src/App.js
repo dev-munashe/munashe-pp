@@ -8,6 +8,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonial from './components/testimonials/Testimonial'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import PrivacyPolicy from './components/privacy/PrivacyPolicy'
+import CookieConsent from './components/cookie-consent/CookieConsent'
 
 const App = () => {
   return (
@@ -20,7 +22,9 @@ const App = () => {
       <Services />
       <Testimonial />
       <Contact />
+      <PrivacyPolicy />
       <Footer />
+      <CookieConsent />
     </>
   )
 }
